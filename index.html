@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    
+<style>
+* {
+  box-sizing: border-box;
+}
+    
+body {
+  background-color: aliceblue;    
+    }
+
+img {
+  width: 100%;
+  height: auto;
+}
+    
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+html {
+  font-family: "Raleway";
+}
+
+.header {
+  background-color: #187795;
+  color: #ffffff;
+  padding: 15px;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 20px;
+  margin-bottom: 7px;
+  background-color: #08B2E3;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+  background-color: darkgray;
+}
+
+.aside {
+  background-color: #74B3CE;
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.footer {
+  background-color: #022B3A;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  text-decoration: none;
+  border-radius: 90%;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+    
+a {
+  text-decoration: none;
+    }
+    
+a:visited {
+        color: white;
+    }
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Caitlin Telarico-Web Designer</h1>
+</div>
+
+<div class="row">
+  <div class="col-3 col-s-3 menu">
+    <ul>
+      <li><a href="index.html">Portfolio</a></li>
+      <li>About</li>
+      <li>Contact</li>
+    </ul>
+  </div>
+
+  <div class="col-6 col-s-9">
+    <h1>Portfolio of Works</h1>
+    <p>Welcome to my portfolio. Feel free to look around and contact me if you're interested in my web design services!</p>
+    <img src="images/webdesign.jpg" alt="website design on a desktop computer screen" width="460" height="345">
+    <img src="images/sitemap.jpg" alt="drawing of a site map and site layout using pen and paper in a notebook" width="460" height="345">
+    <img src="images/apps.jpg" alt="close up of app icons on mobile device" width="460" height="345">
+  </div>
+
+  <div class="col-3 col-s-12">
+    <div class="aside">
+     <div class="container">
+  <form action="/action_page.php">
+    <h3>Contact Me</h3>
+    <div class="row">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    </div>
+    <br>
+    <div class="row">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    </div>
+    <br>
+    <div class="row">
+        <label for="email">Email</label>
+          <input type="text" id="email" name="email" placeholder="Your email address..">
+      </div>
+    <br>
+    <div class="row">
+      </div>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <p>&copy; Copyright 2019, All Rights Reserved.</p>
+  <a href="https://www.linkedin.com/in/caitlintelarico/" class="fa fa-linkedin"></a>
+  <a href="https://twitter.com/cbtelarico" class="fa fa-twitter"></a>
+</div>
+
+</body>
+</html>
