@@ -1,0 +1,34 @@
+#main-menu {
+    display: none;
+}
+
+.item3 {
+    display: none;
+}
+
+.item4 {
+    display: none;
+}
+
+.header, .item2 {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+    background: #FFF;
+    font-size: 12pt !important;
+}
+
+* {
+    color: #000000 !important;
+}
+
+body {
+    margin-top: 15pt;
+    padding-top: 5pt;
+}
+
+a:after {
+    content: " (" attr(href) ") ";
+}
+
